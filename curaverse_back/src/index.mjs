@@ -1,4 +1,5 @@
 import express from "express";
+import path from "path";
 import routers from "../routes/apis/index.mjs";
 import cookieParser from "cookie-parser";
 import session from "express-session";
@@ -19,6 +20,11 @@ app.use(
 
 setAppointmentReminder();
 setMedicationReminder();
+
+app.use(express.static(path.join(__dirname, "client/build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/client/build", "index.html"));
+});
 
 app.use(cookieParser());
 app.use(
