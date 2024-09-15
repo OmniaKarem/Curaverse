@@ -1,0 +1,63 @@
+.modal-backdrop{
+    background-color: rgb(235, 229, 229);
+}
+
+
+h4{
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #6caab5;
+    font-size: 30px;
+}
+
+.mb-3{
+    padding: 30px;
+    margin-bottom: 1rem;
+}
+
+.form-label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6caab5;
+    font-size: 23px;;
+}
+
+.form-control{
+    border-radius: 50px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+.form-control:focus{
+    border-color: #6caab5;
+}
+
+.btn-primary{
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 1px solid #6caab5;
+    color: #6caab5;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: white;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.btn-primary:hover{
+    background-color: #6caab5;
+    color: white;
+}
+
+.btn-secondary{
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 1px solid #6caab5;
+    color: #6caab5;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: white;
+    width: 30%;
+    margin-left: 35%;
+}

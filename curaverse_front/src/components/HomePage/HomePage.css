@@ -1,0 +1,83 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/last.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.home-page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+.home-page-header {
+  width: 380%;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-55%);
+  position: relative;
+  z-index: 5;
+}
+
+.home-page-cards {
+  display: block;
+  justify-content: center;
+  margin-top: -450px;
+  position: relative;
+  z-index: 1;
+}
+
+.list-group {
+  position: fixed;
+  justify-content: center;
+  width: 60%;
+  transform: translateX(-18%);
+  z-index: 10;
+  top: 13%;
+  height: 30%;
+  overflow-y: auto;
+  word-wrap: break-word;
+  margin-top: 10px;
+}
+
+.list-group-item {
+  top: 100px;
+  position: relative;
+  height: auto;
+}
+
+.alert-success {
+  width: 60%;
+  transform: translateX(-18%);
+  z-index: 10;
+  top: 8%;
+  position: absolute;
+}
+
+.alert-warning {
+  width: 60%;
+  transform: translateX(-18%);
+  z-index: 10;
+  top: 8%;
+  position: absolute;
+  background-color: rgba(255, 2, 2, 0.473);
+  color: rgb(129, 0, 0);
+}
+
+.reviews{
+  color: white;
+}
+
+.reviews:hover{
+  color: #2551ff;
+}

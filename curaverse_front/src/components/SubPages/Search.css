@@ -1,0 +1,41 @@
+.navbar {
+    transform: translateY(10%);
+    padding: 0.5rem 1rem;
+    margin-left: 40%;  
+    margin-right: -2%; 
+    width: 80%;
+}
+
+.form-inline {
+    display: flex;
+    justify-content: center;
+    width: 100%;    
+}
+
+.form-control {
+    position: relative;
+    border-radius: 50px;
+    padding: 10px;
+    width: 1600px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease; 
+}
+
+.form-control:focus {
+    border-color: #6CAAB5;
+    outline: none;  
+}
+
+.btn-outline-success {
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 2px solid #6CAAB5;
+    color: #6CAAB5;
+    transition: background-color 0.3s ease, color 0.3s ease;    
+}
+
+.btn-outline-success:hover {
+    background-color: #6CAAB5;
+    color: white;   
+}

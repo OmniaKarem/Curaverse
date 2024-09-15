@@ -1,0 +1,231 @@
+.signUpContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.leftSection {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.welcomeImg {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 50px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.welcomeImg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.welcomeImg img:hover {
+  box-shadow: none;
+}
+
+.leftSection .welcomeText {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  transform: translateY(240%);
+}
+
+.welcomeText .websiteName {
+  color: #f6a35f;
+}
+
+.buttons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  top: 77%;
+  margin-left: -60%;
+}
+
+.buttons .signUpButton,
+.buttons .signInButton {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #a1ab90;
+  transition: background-color 0.3s ease;
+}
+
+.buttons .signUpButton{
+  margin-left: -25%;
+}
+
+.buttons .signUpButton:hover,
+.buttons .signInButton:hover {
+  background-color: #f6a35f;
+}
+
+.rightSection {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.signUpForm {
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  background-color: #c4e4f1;
+  border-radius: 40px;
+  box-shadow: 10px 10px 20px #fcedd1;
+}
+
+.errorIcon {
+  display: inline;
+  color: rgb(207, 2, 2);
+  width: 20px;
+  height: 20px;
+  margin-left: 13px;
+}
+
+.errorMessage {
+  display: inline;
+  color: rgb(207, 2, 2);
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 13px;
+  text-decoration: underline;
+}
+
+.genderErrorIcon {
+  display: inline;
+  color: rgb(207, 2, 2);
+  width: 20px;
+  height: 20px;
+  margin-left: 13px;
+  margin-top: 3%;
+}
+
+.genderErrorMessage {
+  display: inline;
+  color: rgb(207, 2, 2);
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 13px;
+  text-decoration: underline;
+  margin-top: 3%;
+}
+
+.rightSection :hover {
+  box-shadow: none;
+}
+
+.signUpForm h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-left: 41%;
+}
+
+.signUpForm .inputBox {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.signUpForm .inputBox input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d9cfcf;
+  border-radius: 50px;
+  outline: none;
+  margin-bottom: 3%;
+}
+
+.signUpForm .inputBox label {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  display: block;
+  margin-left: 13px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper .eyeIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 4px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-70%);
+  cursor: pointer;
+}
+
+.gender {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.gender .femaleBox {
+  margin-right: 10px;
+  margin-left: 13px;
+}
+
+.gender .maleBox {
+  margin-right: 10px;
+  margin-left: 110px;
+}
+
+.gender label {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  display: inline;
+}
+
+.signUpForm .submitButton {
+  width: 40%;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 10px 30px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 2px 2px 2px #fbe8c5;
+}
+
+.signUpForm .submitButton:hover {
+  box-shadow: none;
+  background-color: white;
+}

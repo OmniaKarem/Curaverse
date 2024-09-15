@@ -1,0 +1,45 @@
+.review-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-form .rating {
+  width: 9%;
+  border: none;
+  border-radius: 55px;
+  transform: translateX(-550%);
+  margin-bottom: 40px;
+}
+
+.review-form .review {
+  width: 70%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 55px;
+  transform: translateX(-71%);
+  margin-bottom: 40px;
+}
+
+.submit-btn {
+  width: 25%;
+  height: 42px;
+  border: 2px solid #6caab5;
+  border-radius: 25px;
+  background-color: #6caab5;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-198%);
+  margin-bottom: 40px;
+}
+
+.submit-btn:hover {
+  background-color: #6caab5;
+  color: white;
+}
