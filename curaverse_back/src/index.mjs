@@ -21,12 +21,10 @@ app.use(
 setAppointmentReminder();
 setMedicationReminder();
 
-// app.use(express.static(path.join(__dirname, "../../curaverse_front/build")));
-// app.get("*", (req, res) => {
-//   res.sendFile(
-//     path.join(__dirname + "../../curaverse_front/build", "index.html")
-//   );
-// });
+app.use(express.static(path.resolve("../../curaverse_front/dist")));
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve("../../curaverse_front/dist", "index.html"));
+});
 
 app.use(cookieParser());
 app.use(
