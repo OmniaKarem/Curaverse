@@ -1,9 +1,14 @@
 import { Sequelize, DataTypes, Model } from "sequelize";
 
-const sql = new Sequelize("rudii8qvrm79hf9g", "lgjhe9mqtyijowl4", "uf22j9yxjfo8skga", {
-  host:"jfrpocyduwfg38kq.chr7pe7iynqr.eu-west-1.rds.amazonaws.com",
-  dialect: "mysql",
-})
+const sql = new Sequelize(
+  "k9l9wjd9icxa4ut6",
+  "y9wsfxlhb7a9mrad",
+  "q5je5r2lttg1sirk",
+  {
+    host: "jfrpocyduwfg38kq.chr7pe7iynqr.eu-west-1.rds.amazonaws.com",
+    dialect: "mysql",
+  }
+);
 
 // const sql = new Sequelize("curaverseDB", "root", "Theend2/8/2021", {
 //   host: "127.0.0.1",
@@ -359,6 +364,10 @@ Agreements.belongsTo(Reviews, { foreignKey: "review_id" });
 
 User.hasMany(Files, { foreignKey: "user_id" });
 Files.belongsTo(User, { foreignKey: "user_id" });
+
+sql.sync({ force: false }).then(() => {
+  console.log("Database & tables created!");
+});
 
 export {
   sql,
