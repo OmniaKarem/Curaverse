@@ -1,5 +1,4 @@
 import express from "express";
-import path from "path";
 import routers from "../routes/apis/index.mjs";
 import cookieParser from "cookie-parser";
 import session from "express-session";
@@ -21,16 +20,6 @@ app.use(
 setAppointmentReminder();
 setMedicationReminder();
 
-// app.get("/*", function (req, res) {
-//   res.sendFile(
-//     path.join(__dirname, "../../curaverse_front/dist/index.html"),
-//     function (err) {
-//       if (err) {
-//         res.status(500).send(err);
-//       }
-//     }
-//   );
-// });
 
 app.use(cookieParser());
 app.use(
