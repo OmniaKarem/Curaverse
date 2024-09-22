@@ -10,7 +10,7 @@
   border: none;
   border-radius: 55px;
   transform: translateX(-550%);
-  margin-bottom: 40px;
+  margin-bottom: 3px;
 }
 
 .review-form .review {
@@ -20,13 +20,13 @@
   border: none;
   border-radius: 55px;
   transform: translateX(-71%);
-  margin-bottom: 40px;
+  margin-bottom: 3px;
 }
 
 .submit-btn {
   width: 25%;
   height: 42px;
-  border: 2px solid #6caab5;
+  border: none;
   border-radius: 25px;
   background-color: #6caab5;
   color: white;
@@ -36,10 +36,11 @@
   align-items: center;
   justify-content: center;
   transform: translateX(-198%);
-  margin-bottom: 40px;
+  margin-bottom: 3px;
+  margin-right: 120px;
 }
 
 .submit-btn:hover {
-  background-color: #6caab5;
-  color: white;
+  background-color: #ffffff;
+  color: #6caab5;
 }

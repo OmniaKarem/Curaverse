@@ -47,7 +47,7 @@
   color: #6caab5;
   transition: background-color 0.3s ease, color 0.3s ease;
   background-color: white;
-  margin-left: -15%;
+  margin-left: 45%;
   margin-top: 40px;
 }
 
@@ -62,8 +62,8 @@
   overflow-y: auto;
   word-wrap: break-word;
   margin-left: 40%;
-  position: relative;
-  transform: translateY(-90%);
+  position: fixed;
+  transform: translateY(90%);
 }
 
 .list-group-item {
@@ -83,6 +83,7 @@
 }
 
 .delete-btn {
+  position: absolute;
   background-color: #6caab5;
   color: white;
   border: none;
@@ -90,6 +91,8 @@
   padding: 8px 12px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: -2%;
+  margin-left: -140px;
 }
 
 .delete-btn:hover {
@@ -98,6 +101,7 @@
 }
 
 .edit-btn {
+  position: absolute;
   background-color: #6caab5;
   color: white;
   border: none;
@@ -105,6 +109,8 @@
   padding: 8px 12px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: -2%;
+  margin-left: -200px;
 }
 
 .edit-btn:hover {

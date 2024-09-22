@@ -186,7 +186,10 @@ function Doctors() {
 
   return (
     <div className="container">
-      <Search placeholder="Search for your doctors..." onSearch={handleSearch} />
+      <Search
+        placeholder="Search for your doctors..."
+        onSearch={handleSearch}
+      />
 
       {/* Add Doctor Form */}
       <form onSubmit={handleAddDoctorSubmit} className="mb-4">
@@ -299,7 +302,7 @@ function Doctors() {
           >
             {doctor.name}, {doctor.speciality},{" "}
             {doctor.contact_info || "No Contact Info."}
-            <div>
+            <div className="buttons_cont">
               <button
                 type="button"
                 className="edit-btn"
@@ -314,9 +317,8 @@ function Doctors() {
               >
                 Delete
               </button>
-
-              <Reviews doctorId={doctor.doctor_id} />
             </div>
+            <Reviews doctorId={doctor.doctor_id} />
           </li>
         ))}
       </ul>

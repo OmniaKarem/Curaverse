@@ -357,15 +357,21 @@ function Appointments() {
       <ul className="list-group scrollable-list-group">
         {appointments.map((appointment) => (
           <li key={appointment.appointment_id} className="list-group-item">
-            <strong>
+            <strong className="dr">
               <em>Dr. </em>
               {appointment.doctor_details.name}
             </strong>{" "}
-            {formatDate(appointment.appointment_date)} <br />
-            <em>Specialty:</em> {appointment.doctor_details.speciality} <br />
-            <em>Contact:</em>{" "}
-            {appointment.doctor_details?.contact_info || "No Contact Info"}{" "}
-            <br />
+            {formatDate(appointment.appointment_date)}
+            <em className="specialty">Specialty:</em>{" "}
+            <div className="specialty2">
+              {appointment.doctor_details.speciality}
+            </div>
+            <em className="contact">Contact:</em>
+            <div className="contact2">
+              {" "}
+              {appointment.doctor_details?.contact_info ||
+                "No Contact Info"}{" "}
+            </div>
             {appointment.notes && <p>Notes: {appointment.notes}</p>}
             <div className="mt-1">
               <button

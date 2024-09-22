@@ -159,7 +159,7 @@ function MedicationsReminderCard() {
             className={`list-group-item ${reminder.sent ? "sent" : "not-sent"}`}
           >
             <strong>{formatDate(reminder.reminder_time)}</strong> <br />
-            <p>Message: {reminder.message}</p>
+            <p className="message">Message: {reminder.message}</p>
             <button
               onClick={() => handleEditClick(reminder)}
               className="edit-btn"

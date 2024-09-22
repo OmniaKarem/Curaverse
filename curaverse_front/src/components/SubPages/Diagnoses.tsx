@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import { format } from "date-fns";
 import Search from "./Search";
 import "./Diagnoses.css";
 
@@ -192,6 +193,15 @@ function Diagnoses() {
     fetchDiagnoses();
   };
 
+  const formatDate = (dateString: string | undefined) => {
+    try {
+      return format(new Date(dateString || ""), "dd/MM/yyyy, hh:mm a");
+    } catch (error) {
+      console.error("Error formatting date:", error);
+      return dateString || "";
+    }
+  };
+
   return (
     <div className="container">
       <Search placeholder="Search for diagnoses..." onSearch={handleSearch} />
@@ -297,7 +307,8 @@ function Diagnoses() {
       <ul className="list-group scrollable-list-group">
         {diagnoses.map((diagnosis) => (
           <li key={diagnosis.diagnosis_id} className="list-group-item">
-            {diagnosis.name}, {diagnosis.diagnosis_date || "No date."},{" "}
+            {diagnosis.name},{" "}
+            {formatDate(diagnosis.diagnosis_date) || "No date."},{" "}
             {diagnosis.notes || "No Notes."}
             <div>
               <button

@@ -82,14 +82,22 @@
   padding: 0 15px;
 }
 
+.buttons_cont {
+  margin-top: -50px;
+}
+
 .delete-btn {
+  position: absolute;
   background-color: #6caab5;
   color: white;
   border: none;
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-  transform: translateY(95%);
+  margin-left: 50px;
+  /* margin-top: 0%; */
+  /* transform: translateX(50px); */
+  /* margin-left: 440%; */
 }
 
 .delete-btn:hover {
@@ -98,15 +106,16 @@
 }
 
 .edit-btn {
+  position: absolute;
   background-color: #6caab5;
   color: white;
   border: none;
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-  transform: translateY(95%);
-  margin-left: 200px;
-  margin-right: 5px;
+  /* margin-top: 0%; */
+  margin-left: 200%;
+  /* margin-right: 15px; */
 }
 
 .edit-btn:hover {

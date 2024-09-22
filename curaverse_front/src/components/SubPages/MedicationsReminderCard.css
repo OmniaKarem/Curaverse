@@ -75,7 +75,13 @@ h4 {
   color: #721c24;
 }
 
+.message {
+  margin-right: 35%;
+  margin-top: 1%;
+}
+
 .delete-btn {
+  position: absolute;
   background-color: #6caab5;
   color: white;
   border: none;
@@ -83,6 +89,7 @@ h4 {
   padding: 8px 12px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 90%;
 }
 
 .delete-btn:hover {
@@ -91,6 +98,7 @@ h4 {
 }
 
 .edit-btn {
+  position: absolute;
   background-color: #6caab5;
   color: white;
   border: none;
@@ -98,6 +106,7 @@ h4 {
   padding: 8px 12px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 85%;
 }
 
 .edit-btn:hover {
