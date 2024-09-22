@@ -21,16 +21,16 @@ app.use(
 setAppointmentReminder();
 setMedicationReminder();
 
-app.get("/*", function (req, res) {
-  res.sendFile(
-    path.join(__dirname, "../../curaverse_front/dist/index.html"),
-    function (err) {
-      if (err) {
-        res.status(500).send(err);
-      }
-    }
-  );
-});
+// app.get("/*", function (req, res) {
+//   res.sendFile(
+//     path.join(__dirname, "../../curaverse_front/dist/index.html"),
+//     function (err) {
+//       if (err) {
+//         res.status(500).send(err);
+//       }
+//     }
+//   );
+// });
 
 app.use(cookieParser());
 app.use(
@@ -54,9 +54,4 @@ app.use(routers);
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
-});
-
-app.get("/", (req, res) => {
-  console.log("Hello World");
-  res.send("Hello World");
 });
