@@ -1,7 +1,7 @@
 # Curaverse
 
 Overview:
-CURAVERSE is a personal practice project designed to help users manage their healthcare. Built using Node.js, Express, MySQL, and React, this full-stack application allows users to track diagnoses, medications, and appointments, as well as share reviews of doctors.
+CURAVERSE is designed to help users manage their healthcare. Built using Node.js, Express, MySQL, and React, this full-stack application allows users to track diagnoses, medications, and appointments, as well as share reviews of doctors.
 
 Technologies Used:
 Node.js: Server-side JavaScript runtime.
