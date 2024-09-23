@@ -36,7 +36,7 @@ npm install
 
 4- Start the backend server:
 ```bash
-npm start
+npm run start:dev
 ```
 
 5- Navigate to the frontend directory:
