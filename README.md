@@ -19,8 +19,10 @@ Installation:
 To get started with CURAVERSE locally, follow these steps:
 
 1- Clone the repository:
-bash
-git clone [repository-url]
+```bash
+git clone https://github.com/OmniaKarem/Curaverse.git
+```
+
 2- Navigate to the project directory:
 ```bash
 cd curaverse
@@ -28,7 +30,7 @@ cd curaverse
 
 3- Install the backend dependencies:
 ```bash
-cd backend
+cd curaverse_back
 npm install
 ```
 
