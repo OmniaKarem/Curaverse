@@ -23,7 +23,7 @@ bash
 git clone [repository-url]
 2- Navigate to the project directory:
 bash
-cd curaverse
+```cd curaverse```
 3- Install the backend dependencies:
 bash
 cd backend
