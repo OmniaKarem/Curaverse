@@ -22,8 +22,8 @@ To get started with CURAVERSE locally, follow these steps:
 bash
 git clone [repository-url]
 2- Navigate to the project directory:
-bash
-```cd curaverse```
+```bash
+cd curaverse```
 3- Install the backend dependencies:
 bash
 cd backend
