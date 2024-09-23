@@ -34,4 +34,22 @@ cd curaverse_back
 npm install
 ```
 
+4- Start the backend server:
+```bash
+npm start
+```
 
+5- Navigate to the frontend directory:
+```bash
+cd ../curaverse_front
+```
+
+6- Install the frontend dependencies:
+```bash
+npm install
+```
+
+7- Start the frontend development server:
+```bash
+npm run dev
+```
