@@ -10,6 +10,11 @@ const sql = new Sequelize(
   }
 );
 
+// const sql = new Sequelize("curaverseDB", "root", "Theend2/8/2021", {
+//   host: "127.0.0.1",
+//   dialect: "mysql",
+// });
+
 const User = sql.define("users", {
   user_id: {
     type: DataTypes.INTEGER,
